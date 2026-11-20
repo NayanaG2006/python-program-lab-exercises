@@ -1,0 +1,33 @@
+# Arithmetic Operations on Two Numbers
+
+# Accept two numbers
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+
+# Perform arithmetic operations
+addition = num1 + num2
+subtraction = num1 - num2
+multiplication = num1 * num2
+division = num1 / num2
+floor_division = num1 // num2
+modulus = num1 % num2
+exponentiation = num1 ** num2
+
+# Display formatted output
+print("\n" + "=" * 40)
+print("       ARITHMETIC OPERATIONS")
+print("=" * 40)
+
+print(f"First Number  : {num1}")
+print(f"Second Number : {num2}")
+
+print("-" * 40)
+print(f"Addition       : {addition}")
+print(f"Subtraction    : {subtraction}")
+print(f"Multiplication : {multiplication}")
+print(f"Division       : {division:.2f}")
+print(f"Floor Division : {floor_division}")
+print(f"Modulus        : {modulus}")
+print(f"Exponentiation : {exponentiation}")
+
+print("=" * 40)

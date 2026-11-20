@@ -1,0 +1,31 @@
+import math
+
+# Accept a floating-point number
+num = float(input("Enter a floating-point number: "))
+
+# Perform mathematical operations
+square = num ** 2
+cube = num ** 3
+square_root = math.sqrt(num)
+ceiling = math.ceil(num)
+floor = math.floor(num)
+absolute = abs(num)
+variable_type = type(num)
+memory_address = id(num)
+
+# Display formatted output
+print("\n" + "=" * 40)
+print("       MATHEMATICAL OPERATIONS")
+print("=" * 40)
+
+print(f"Number          : {num}")
+print(f"Square          : {square}")
+print(f"Cube            : {cube}")
+print(f"Square Root     : {square_root:.2f}")
+print(f"Ceiling Value   : {ceiling}")
+print(f"Floor Value     : {floor}")
+print(f"Absolute Value  : {absolute}")
+print(f"Type            : {variable_type}")
+print(f"Memory Address  : {memory_address}")
+
+print("=" * 40)

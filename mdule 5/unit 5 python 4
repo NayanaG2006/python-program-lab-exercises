@@ -1,0 +1,28 @@
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Read CSV file
+data = pd.read_csv("sales.csv")
+
+# Display sales data
+print(data)
+
+# Line graph
+for product in data["Product"].unique():
+    temp = data[data["Product"] == product]
+    plt.plot(temp["Date"], temp["Sales"], marker='o', label=product)
+
+plt.xlabel("Date")
+plt.ylabel("Sales")
+plt.title("Retail Sales Line Graph")
+plt.legend()
+plt.show()
+
+# Bar chart
+data.groupby("Product")["Sales"].sum().plot(kind="bar")
+
+plt.xlabel("Product")
+plt.ylabel("Total Sales")
+plt.title("Total Sales by Product")
+plt.show()
